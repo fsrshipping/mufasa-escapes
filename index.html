@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Mufasa Escapes</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+		
+		<!-- Google fonts Kaushan script -->
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+		
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+		
+	</head>
+	
+	<body>
+		<!-- Navigation -->
+		<nav class="nav container" id="nav">
+			<div class="nav__logo__list">
+				<img class="nav__logo" src="img/logo.png">
+				<ul id="navList" class="navigation__list">
+					<li class="navigation__item" id="home-btn"><a href="#">Home</a></li>
+					<li class="navigation__item" id="about-btn"><a href="#about">About</a></li>
+					<li class="navigation__item" id="store-btn"><a href="#resorts">Resorts</a></li>
+                    <li class="navigation__item" id="store-btn"><a href="contact.html">Contact</a></li>
+                    <li class="navigation__item navigation__item-last" id="reservation-btn"><a href="reservation.html" class="btn btn-welcome-nav">Your Reservation</a></li>
+				</ul>
+			</div>
+			
+			<div class="navigation__button">
+				<a class="btn-nav" id="nav-open"><i class="fas fa-bars"></i></a>
+				<a class="btn-nav" id="nav-close"><i class="fas fa-times"></i></a>
+			</div>
+		</nav>
+
+		<!-- Welcome --> 
+		<div class="welcome welcome-home container">
+			<h2 class="welcome__title">Welcome To <span class="title--accent">Mufasa Escapes</span></h2>
+			<a href="reservation.html" class="btn btn-welcome">Your Reservation</a>
+		</div>
+			
+		<!-- About us -->
+		<div class="about container" id="about">
+			<div class="about__column">
+				<div class="about__column--text"> 
+					<h2 class="about__title">About <span class="title--accent">Us</span></h2>
+					<p class="about__text">Our Mufasa Resorts welcome you to relax and enjoy a time away from the hectic daily life. With us you will find secluded escapes where all your needs are taken care of. Wheter you want to enjoy a luxury vacation or want to do business in private, we have the place for you to make your dreams come true.<br>
+                    Take a look at our different resorts to see what we have to offer you. Contact us for bookings and quotations.</p>
+                    <btn id="explore" class="btn">Explore</btn>
+                    <a href="contact.html" class="btn">Contact</a>
+				</div>
+				<div class="img-container">
+					<img class="about__img" src="img/home/lion.jpg" alt="lion">
+				</div>
+			</div> <!-- /about__column -->
+		</div> <!-- /about container -->
+        
+        <!-- Modal -->
+        
+        <div id="modal" class="modal">
+            <div class="modal__container">
+                <img src="img/home/map.png" class="modal-image">
+                <btn id="closemodal" class="btn">Back</btn>
+            </div>
+        </div>
+		
+		<!-- Store -->
+		<div class="store container" id="resorts">
+			<h2 class="store__title">Our <span class="title--accent">Resorts</span></h2>
+			<div class="store__buttons">
+				<a href="#store" class="btn store__btn" id="all" data-filter="all">All</a>
+                
+                <a href="#store" class="btn store__btn" id="africa" data-filter="africa">Africa</a>
+                <a href="#store" class="btn store__btn" id="asia" data-filter="asia">Asia</a>
+                <a href="#store" class="btn store__btn" id="australia" data-filter="australia">Australia</a>
+                <a href="#store" class="btn store__btn" id="europe" data-filter="europe">Europe</a>
+                <a href="#store" class="btn store__btn" id="south-america" data-filter="south-america">South-America</a>
+                
+				
+			</div>
+			<div class="store__search">
+				<span class="store__search--icon"><i class="fas fa-search"></i></span>
+				<input id="searchbar" class="store__searchbar" type="text" placeholder="search..."> 
+			</div>
+			
+			<div class="store__items">
+				
+                <!-- Item -->
+				<div class="item africa" data-item="africa benin penjari">
+                    <a href="resorts/benin.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/africa/benin/lodge.jpg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>Benin - Pendjari National Park</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>
+                
+                <!-- Item -->
+				<div class="item europe" data-item="europe romania bucegi">
+                    <a href="resorts/romania.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/europe/romania/lodge.jpg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>Romania - Parcul Natural Bucegi</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>                
+                
+                <!-- Item -->
+				<div class="item africa" data-item="africa gambia kiang">
+                    <a href="resorts/gambia.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/africa/gambia/lodge.jpg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>Gambia - Kiang</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>
+                
+                <!-- Item -->
+				<div class="item africa" data-item="africa cameroon korup">
+                    <a href="resorts/cameroon.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/africa/cameroon/lodge.jpg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>Cameroon - Korup National Park</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>
+                
+                <!-- Item -->
+				<div class="item australia" data-item="australia blackwood river">
+                    <a href="resorts/australia.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/australia/lodge.jpeg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>Australia - Blackwood River National Park</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>
+                
+                <!-- Item -->
+				<div class="item europe" data-item="europe netherlands hoge veluwe">
+                    <a href="resorts/netherlands.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/europe/netherlands/lodge.jpg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>Netherlands - Hoge Veluwe National Park</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>
+                
+                <!-- Item -->
+				<div class="item africa" data-item="africa ghana mole">
+                    <a href="resorts/ghana.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/africa/ghana/lodge.jpg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>Ghana - Mole Park</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>
+                
+                <!-- Item -->
+				<div class="item africa" data-item="africa nigeria cross river">
+                    <a href="resorts/nigeria.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/africa/nigeria/lodge.jpg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>Nigeria - Cross River National Park</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>
+                
+                <!-- Item -->
+				<div class="item south-america" data-item="south-america peru madre dios">
+                    <a href="resorts/peru.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/south-america/peru/lodge.jpg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>Peru - Madre de Dios</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>
+                
+                <!-- Item -->
+				<div class="item asia" data-item="asia india tikarpada">
+                    <a href="resorts/india.html">
+                        <div class="store__item--img--container">
+                            <img class="store__item--img" src="img/asia/india/lodge.jpg" alt="">
+                        </div>
+                        <div class="store__item--description store__link">
+                            <p>India - Tikarpada Wildlife Sanctuary</p>
+                            <p><i class="fas fa-paw"></i></p>
+                        </div>
+                    </a>
+				</div>
+                
+                
+				
+				
+			</div> <!-- /store__items -->
+			
+		</div> <!--/store container-->
+        
+        <!-- Footer -->
+        <div class="footer container">
+            <img class="footer__img" src="img/logo.png" alt="logo">
+            <p>&copy Mufasa Escapes since 2013</p>
+        
+        </div>
+		
+		<script src="script/script.js" type="text/javascript"></script>
+        <script src="script/script-home.js" type="text/javascript"></script>
+	</body>
+</html>
